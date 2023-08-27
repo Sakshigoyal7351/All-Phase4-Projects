@@ -1,0 +1,1 @@
+document.write("<i><b>this is the javascript code</b></i>");

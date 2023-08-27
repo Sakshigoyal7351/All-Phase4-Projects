@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function hello(a,b) //WANR
+        {
+            let c;
+            c=a+b;
+            document.write("sum="+c+"<br>");
+        }
+
+        function fun1()    //NANR
+        {
+            document.write("hello");
+            let a=10;
+            let b=20;
+            console.log("sum="+(a+b));
+        }
+
+        function fun2()  //NAWR
+        {
+            let a,b;
+            a=100;
+            b=200;
+            let c;
+            c=a*b;
+            return c;
+        }
+
+
+        function fun3(a,b,c)
+        {
+
+            let d;
+            d=a+b+c;
+            return d;
+        }
+
+        fun1();
+        document.write("<br>");
+
+        document.write(fun2());
+        hello(10,20);
+        hello("sakshi ","Goyal");
+        document.write("<br>");
+    //    document.write(fun2());
+    //    document.write("<br>");
+       let e=fun3(10,20,30);
+        document.write(e);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

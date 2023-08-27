@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ary =[10,"harry",30.6,true];
+
+        document.write(ary);
+
+        // var ary= new Array(4);
+
+        // for(var g=0;g<4;g++)
+        // {
+        //     ary[g]= prompt("enter the element of array!!");
+        // }
+
+        // document.write(ary);
+
+        // document.write("<ol>")
+        // for(var i=0;i<4;i++)
+        // {
+        //     document.write("<li>"+ary[i]+"<br>"+"</li>")
+        // }
+
+        // document.write("</ol>")
+
+
+        var ary =[
+            ["sakshi",25,"female","MCA"],
+            ["Aryan",23,"male","bca"],
+            ["swati",27,"female","bbA"],
+            ["anuj",25,"male","MCA"]
+
+        ];
+
+        document.write("<table border='1px'>")
+        for(var i=0;i<4;i++)
+        {
+            document.write("<tr>")
+            for(var j=0;j<4;j++)
+            {
+                document.write("<td>"+ary[i][j]+"</td>");
+            }
+            document.write("</tr>");
+
+        }
+        document.write("</table>")
+
+
+        
+        document.write(ary.length);
+
+       
+
+
+      
+        
+
+
+
+       
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

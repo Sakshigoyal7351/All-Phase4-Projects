@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let x= (name, marks) =>`hello and welcome ${name}  marks = ${marks}`;
+        
+
+
+       // console.log(x("sakshi",70));
+
+        // function sum(name,course, ...ar)
+        // {
+        //     console.log(arguments);
+
+        //     console.log(`hello ${name}  course   ${course}`);
+        //     let sum=0;
+        //     for(let i in ar)
+        //     {
+        //         sum= sum+ar[i];
+        //     }
+
+        //     console.log("sum="+sum);
+        // }
+
+        // let arr =[20,30,40];
+        // sum(10,20);
+        // sum("sakshi","btech",10,20,30);
+        // sum("raj","bca",...arr);
+
+
+        // let n="student";
+
+
+        // var obj={
+        //     [n+"name"] :"simplilearn",
+        //     course :"Btech",
+        //     'detail show'()
+        //     {
+        //         return `${this.studentname} is the student of ${this.course}`
+        //     }
+        // };
+        // console.log(obj);
+        // console.log(obj['detail show']());
+
+
+
+        //class and objects 
+
+
+        // class hello{
+
+        //     constructor(name,age)
+        //     {
+        //         this.name= name;
+        //         this.age=age;
+        //         console.log("constructor function");
+        //     }
+        //     message()
+        //     {
+        //         console.log(`hello ${this.name} age= ${this.age}`);
+        //     }
+
+        //     static smethod()
+        //     {
+        //         console.log("this is static function!");
+        //     }
+            
+    //     }
+
+    //     let a = new hello("simplilearn",25);
+    //    //a.name ="simplilearn";
+        
+    //     a.message();
+    //     hello.smethod();
+       
+    //inheritance
+
+    // class employee
+    // {
+    //     constructor(name)
+    //     {
+    //         this.name=name;
+    //         console.log("constructor :employee "+this.name);
+    //     }
+
+    //     info()
+    //     {
+    //         console.log("emp1"+this.name);
+    //     }
+    // }
+
+    // class manager extends employee{
+
+    //     constructor(name)
+    //     {
+    //         super(name);
+    //         console.log("constructor: manager "+name);
+    //     }
+
+    //     info()
+    //     {
+    //         super.info();
+    //         console.log("manager1"+this.name);
+    //     }
+    // } 
+
+    // let a = new manager("simplilearn");
+    // a.info();
+
+
+   
+       
+            // try{
+
+            //     hey();
+            // }
+            // catch(error)
+            // {
+            //    // console.log(error);
+            //     // console.log(error.name);
+            //     // console.log(error.message);
+            //     console.log(error.stack);
+            // }
+            // finally{
+            //     console.log("this is finally block");
+            // }
+
+            try{
+                let json= `{ "age":25}`;
+                let user = JSON.parse(json);
+
+                if(!user.name)
+                {
+                    throw new Error("Incomplete data");
+                }
+
+
+                console.log(user.name);
+                console.log(user.age);
+            
+            }
+            catch(error)
+            {
+                console.log(error);
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+        
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

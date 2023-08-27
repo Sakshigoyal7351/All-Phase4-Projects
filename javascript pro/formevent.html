@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name</label>
+        <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)"  oninput="inputFunction(this)" onselect="selectFunction()" oninvalid="alert('please  fill the first name')"  required><br><br>
+
+
+        <label for="">Course</label>
+        <input type="text" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)"><br><br>
+
+        <label for="">Country</label>
+        <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" onchange="changeFunction(this)">
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Sri Lanka">sri lanka</option>
+            <option value="bangaladesh">bangladesh</option>
+        </select>
+
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+
+    <br>
+    <br><br>
+    <div id="test" style="border:1px solid green;"></div>
+    <script>
+        function focusFunction(element)
+        {
+            element.style.background ="pink";
+        }
+
+
+        function blurFunction(element)
+        {
+            element.style.background ="";
+        }
+
+
+        function inputFunction(element)
+        {
+            var x= element.value;
+            document.getElementById("test").innerHTML= x;
+        }
+
+
+        function changeFunction(element)
+        {
+            var x =element.value;
+            document.getElementById("test").innerHTML=x;
+        }
+
+
+        function selectFunction()
+        {
+            console.log("you selected some text...")
+        }
+
+
+        function submitFunction()
+        {
+            alert("you submitted a form");
+        }
+    </script>
+</body>
+</html>

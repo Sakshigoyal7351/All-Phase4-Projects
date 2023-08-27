@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person()
+        {
+            this.name = "Sakshi";
+            if(this.constructor==Person)
+            {
+                throw new Error("test error")  ;
+            }
+        };
+
+        Person.prototype.info = function()
+        {
+            return "name of the person is " + this.name;
+        }
+
+
+        function Teacher(name)
+        {
+            this.name =name;
+        }
+
+        Teacher.prototype = Object.create(Person.prototype);
+        var t1 = new teacher("swati");
+        console.log(t1.info());
+
+       // var obj = new Person();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

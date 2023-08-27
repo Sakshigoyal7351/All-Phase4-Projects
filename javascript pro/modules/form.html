@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #ab
+        {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    
+<h1 id="ab">heading </h1>
+
+
+<p id="ab">paragraph </p>
+
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name</label>
+        <input type="email"  id="fname"  onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)" onselect="selectFunction()"  > <br><br>
+        <label for="">Class</label>
+        <input type="text" id=""  onfocus="focusFunction(this)" onblur="blurFunction(this)"> <br><br>
+        <label for="">country</label>
+        <select name="" id="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" onchange="changeFunction(this)">
+            <option value="India">India</option>
+
+            <option value="sri lanka">sri lanka</option>
+           
+            <option value="Nepal">Nepal</option>
+            <option value="bangladesh">bangladesh</option>
+        </select>
+
+
+        <input type="submit">
+    </form>
+    <br><br>
+
+
+    <div id="test" style="border:1px solid red"></div>
+
+    <script>
+        function focusFunction(element)
+        {
+        element.style.background="pink";
+        }
+
+
+        function blurFunction(element)
+        {
+            element.style.background="";
+
+        }
+
+        function inputFunction(element)
+        {
+
+            var x= element.value;
+            document.getElementById("test").innerHTML=x;
+        }
+
+
+        function changeFunction(element)
+        {
+
+            var x =element.value;
+            document.getElementById("test").innerHTML=x;
+
+        }
+
+
+        function selectFunction()
+        {
+       console.log("you selected some text")     
+        }
+
+
+        function submitFunction()
+        {
+            var x= document.getElementById("fname").value;
+            alert("you submitted a form  "+x);
+        }
+    </script>
+</body>
+</html>

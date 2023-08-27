@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class student
+        {
+            // constructor()
+            // {
+            //     console.log("i am constructor");
+            // }
+             constructor(name,age)
+            {
+
+                this.sname=name;
+                this.sage=age;
+             }
+
+            hello()
+            {
+                console.log("hello "+this.sname+"  "+this.sage);
+            }
+
+            static smethod(a,b)
+            {
+                
+                let c;
+                c=a;
+                a=b;
+                b=c;
+
+                console.log("swapped values :"+"a="+a+"  b=  "+b);
+            }
+        }
+
+       // let b = new student();
+         let a= new student("swati",25);
+        a.hello();
+        student.smethod(100,200);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

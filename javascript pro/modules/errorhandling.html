@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        try{
+
+          let a='{"name":"sakshi","age":30}';
+
+          let b= JSON.parse(a);
+
+          if(!b.name)
+          {
+            throw new Error("Incomplete data: there is no name");
+          }
+
+          console.log(b.name);
+          console.log(b.age);
+        }
+        catch(error){
+
+            // if(error instanceof ReferenceError)
+
+            // {
+            //     console.log('Reference Error');
+            // }
+
+            // else if(error instanceof TypeError)
+            // {
+            //     console.log('type error');
+            // }
+            // else
+            // {
+
+            //     console.log('unknown error');
+            // }
+
+            // //console.log("error has been occured ");
+            console.log(error);
+            // console.log(error.name);
+            // console.log(error.message);
+        }
+        finally
+        {
+            console.log("finally block")
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
